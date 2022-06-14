@@ -6,8 +6,7 @@ import './header.scss';
 function Header() {
   return (
     <div className="header">
-      logo
-      searchbar
+      {/* searchbar */}
       <Nav />
     </div>
   );

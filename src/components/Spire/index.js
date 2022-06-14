@@ -2,11 +2,12 @@
 import Header from 'src/components/Header';
 // Styles
 import './spire.scss';
+import '@fontsource/aileron';
 
 // == Composant
-function App() {
+function Spire() {
   return (
-    <div className="app">
+    <div className="spire">
       <Header />
       <h1>Main</h1>
       <h1>Newsletter bandeau</h1>
@@ -16,4 +17,4 @@ function App() {
 }
 
 // == Export
-export default App;
+export default Spire;
