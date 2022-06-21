@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "AileronHeavy";
+  src: local("AileronHeavy"),
+   url("src/assets/fonts/Aileron-Heavy.otf") format("truetype");
+  font-weight: bold;
+}
+
 .header {
     max-width: 100% !important;
     background-color: #48F09A;
@@ -22,7 +29,7 @@
     align-items: center;
     display: flex;
     background-color: #fff;
-    padding: 20px 40px 20px 30px;
+    padding: 30px 40px 30px 30px;
 
 
     &--image {
@@ -31,9 +38,46 @@
 
     &--title {
       color: #000;
-      font-family: 'Aileron';
+      font-family: 'AileronHeavy';
       font-weight:700;
-      font-size:1.5em;
+      font-size:2em;
+    }
+  }
+
+  &__searchbar {
+    width:50%;
+
+    .MuiFormControl-root.MuiTextField-root.header__searchbar--input.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+      border: 2px solid #000;
+      border-radius: 4px;
+      padding: 0 1em;
+      width:50%;
+      max-width: 30em;
+    }
+
+    .MuiInput-root.MuiInput-underline.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd.css-1ptx2yq-MuiInputBase-root-MuiInput-root::before {
+      display: none;
+    }
+
+    .MuiInput-root.MuiInput-underline.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd.css-1ptx2yq-MuiInputBase-root-MuiInput-root::after {
+      display: none;
+    }
+
+    #mui-1 {
+      color: #000;
+      font-family: AileronHeavy;
+      font-size: .8em;
+      padding: 2px 0;
+    }
+
+    #mui-1::placeholder {
+      color: #000;
+      opacity: 100%;
+    }
+
+    .MuiSvgIcon-root {
+      color:#000;
+      width: .7em;
     }
   }
 }
@@ -46,7 +90,6 @@
 
 .header-bar__links {
   .gutter-links {
-    margin: 0 0.5rem;
     position: relative;
   }
 
@@ -121,4 +164,36 @@
 
 .css-hyum1k-MuiToolbar-root, .css-xdmu94-MuiContainer-root {
   padding-left: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .header__searchbar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__searchbar {
+    display: inline;
+    width: 100%;
+  }
+
+  .gutter-links {
+    margin: 0 .5em;
+    font-size:.8em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__searchbar {
+    display: inline;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .gutter-links {
+    margin: 0 .5em 0 3em;
+    font-size:.8em;
+  }
 }

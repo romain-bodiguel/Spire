@@ -5,14 +5,17 @@ import logo from 'src/assets/img/logo/logo-v1.png';
 import AppBar from '@mui/material/AppBar';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+import Search from '@material-ui/icons/Search';
 import {
   Toolbar,
   Container,
   Hidden,
   IconButton,
+  InputAdornment,
   SwipeableDrawer,
   List,
   ListItem,
+  TextField,
 } from '@mui/material';
 
 // Styles
@@ -42,6 +45,20 @@ function Nav() {
               <h1 className="header__logo--title">Spire</h1>
             </div>
             {/* Desktop Nav */}
+            <div className="header__searchbar">
+              <TextField
+                className="header__searchbar--input"
+                placeholder="Rechercher une station"
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <Search />
+                    </InputAdornment>
+                  ),
+                }}
+                variant="standard"
+              />
+            </div>
             <div className="header-bar__links">
               <Hidden mdDown>
                 {navLinks.map((item) => (
