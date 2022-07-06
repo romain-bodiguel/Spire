@@ -27,8 +27,6 @@ import 'src/assets/fonts/Aileron-Heavy.otf';
 // == Composant
 function Nav() {
   const dispatch = useDispatch();
-  const search = useSelector((state) => state.stations.inputSearchBar);
-  console.log(search);
 
   // Link's array
   const navLinks = [
