@@ -1,6 +1,6 @@
 // == Import : npm
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import logo from 'src/assets/img/logo/logo-v1.png';
 import AppBar from '@mui/material/AppBar';
@@ -27,6 +27,8 @@ import 'src/assets/fonts/Aileron-Heavy.otf';
 // == Composant
 function Nav() {
   const dispatch = useDispatch();
+  const search = useSelector((state) => state.stations.inputSearchBar);
+  console.log(search);
 
   // Link's array
   const navLinks = [

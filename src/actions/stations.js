@@ -2,6 +2,7 @@
 export const CHANGESEARCH = 'CHANGESEARCH';
 
 // ACTION CREATOR changeSearch
-export const changeSearch = () => ({
+export const changeSearch = (value) => ({
   type: CHANGESEARCH,
+  value,
 });

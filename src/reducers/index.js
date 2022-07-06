@@ -4,7 +4,7 @@ import stationsReducer from './stations';
 import userReducer from './user';
 
 const rootReducer = combineReducers({
-  spots: stationsReducer,
+  stations: stationsReducer,
   user: userReducer,
 });
 
