@@ -2,7 +2,7 @@ import { legacy_createStore as createStore, applyMiddleware, compose } from 'red
 
 import reducer from 'src/reducers';
 // on importe notre middleware
-import apiMiddleWare from '../middlewares/api';
+import apiMiddleWare from 'src/middlewares/api';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

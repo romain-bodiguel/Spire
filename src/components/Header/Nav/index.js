@@ -1,5 +1,6 @@
 // == Import : npm
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import logo from 'src/assets/img/logo/logo-v1.png';
 import AppBar from '@mui/material/AppBar';
@@ -17,6 +18,7 @@ import {
   ListItem,
   TextField,
 } from '@mui/material';
+import { changeSearch } from 'src/actions/stations';
 
 // Styles
 import './nav.scss';
@@ -24,6 +26,8 @@ import 'src/assets/fonts/Aileron-Heavy.otf';
 
 // == Composant
 function Nav() {
+  const dispatch = useDispatch();
+
   // Link's array
   const navLinks = [
     { name: 'Accueil', href: '/' },
@@ -32,6 +36,10 @@ function Nav() {
     { name: 'Contact', href: '/' },
     { name: 'Mon compte', href: '/' },
   ];
+
+  const handleChangeSearch = (value) => {
+    dispatch(changeSearch(value));
+  };
 
   const [open, setOpen] = useState(false);
 
@@ -57,6 +65,7 @@ function Nav() {
                   ),
                 }}
                 variant="standard"
+                onChange={(event) => handleChangeSearch(event.target.value)}
               />
             </div>
             <div className="header-bar__links">

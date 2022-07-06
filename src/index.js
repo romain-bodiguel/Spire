@@ -1,21 +1,21 @@
 // == Import : npm
 import ReactDom from 'react-dom';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
 // == Import : local
 // Composants
 import Spire from 'src/components/Spire';
-// import store from 'src/store';
+import store from 'src/store';
 
 // == Render
 // 1. Élément React racine (celui qui contient l'ensemble de l'app)
 //    => crée une structure d'objets imbriqués (DOM virtuel)
 const rootReactElement = (
   <BrowserRouter>
-    {/* <Provider store={store}> */}
-    <Spire />
-    {/* </Provider> */}
+    <Provider store={store}>
+      <Spire />
+    </Provider>
   </BrowserRouter>
 );
 // 2. La cible du DOM (là où la structure doit prendre vie dans le DOM)
