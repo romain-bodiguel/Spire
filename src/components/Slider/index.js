@@ -6,7 +6,7 @@ import picto from 'src/assets/img/images/cercle-fleche-complet.png';
 function Slider() {
   return (
     <div className="slider">
-      <button type="button" className="slider__button">Trouvez votre station</button>
+      <button type="button" href="/" className="slider__button">Trouvez votre station</button>
       <img alt="go-down-logo" className="slider__picto" src={picto} />
     </div>
   );
