@@ -1,5 +1,6 @@
 // == Import: npm
 import Header from 'src/components/Header';
+import Slider from 'src/components/Slider';
 // Styles
 import './spire.scss';
 import '@fontsource/aileron';
@@ -9,7 +10,7 @@ function Spire() {
   return (
     <div className="spire">
       <Header />
-      <h1>Main</h1>
+      <Slider />
       <h1>Newsletter bandeau</h1>
       <h1>Footer</h1>
     </div>

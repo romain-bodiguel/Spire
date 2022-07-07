@@ -1,0 +1,52 @@
+.slider {
+  background-image: url('src/assets/img/images/descente-3.png');
+  height: 20em;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+   &__button {
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #48FF9B, #00FFDA);
+    display: block;
+    font-weight: 700;
+    padding: 0 .5em;
+    margin: 0 auto;
+    font-size: 1.5em;
+    height:2em;
+  }
+
+  &__picto {
+    display:none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .slider {
+    height: 40em;
+
+    &__button {
+      font-size:2em;
+    }
+
+    &__picto {
+      display:block;
+      width: 5em;
+      margin-bottom: 20px;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom:0;
+      transition: all .3s ease-out;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+}
