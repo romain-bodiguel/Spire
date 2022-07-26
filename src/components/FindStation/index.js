@@ -1,9 +1,9 @@
 // == Import : npm
-import './slider.scss';
+import './findStation.scss';
 import picto from 'src/assets/img/images/cercle-fleche-complet.png';
 
 // == Composant
-function Slider() {
+function FindStation() {
   return (
     <div className="slider">
       <button type="button" href="/" className="slider__button">Trouvez votre station</button>
@@ -13,4 +13,4 @@ function Slider() {
 }
 
 // == Export
-export default Slider;
+export default FindStation;
