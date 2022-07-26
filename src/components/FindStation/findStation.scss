@@ -1,4 +1,4 @@
-.slider {
+.findStation {
   background-image: url('src/assets/img/images/descente-3.png');
   height: 20em;
   background-size: cover;
@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width:768px) {
-  .slider {
+  .findStation {
     height: 40em;
 
     &__button {

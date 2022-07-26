@@ -1,0 +1,68 @@
+.howItWorks {
+  overflow:hidden;
+  background: linear-gradient(to bottom, #6384ac, #48f09b 30%);
+
+  h1 {
+    padding: 20px 0 30px;
+    margin: 2em auto;
+    border-bottom: #000 3px solid;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: 2em;
+  }
+
+  h2 {
+    margin: 0 auto 2em;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-bottom: 3px solid black;
+  }
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+
+  li {
+    padding:0 25%;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: auto;
+    max-height: 7em;
+    margin-bottom:1em;
+  }
+
+  p {
+    margin: 1em auto 2em;
+  }
+}
+
+.control-arrow {
+  display:none;
+}
+
+@media screen and (min-width:768px) {
+  .slider {
+    
+    li {
+      padding:0 35%;
+    }
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .slider {
+    
+    li {
+      padding:0 40%;
+    }
+  }
+}
